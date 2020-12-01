@@ -16,7 +16,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'docker'
+        sh 'cat versionImage | xargs ./scripts/build.sh'
       }
     }
 
