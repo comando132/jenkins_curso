@@ -16,6 +16,7 @@ pipeline {
 
     stage('build') {
       steps {
+        sh 'chmod +x -R ${env.WORKSPACE}'
         sh 'cat versionImage | xargs ./scripts/build.sh'
       }
     }
