@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 # dependenciass
-RUN apt update && apk add build-base
+RUN apk add build-base
 # agregar los archivos locales al contenedor
 ADD ./src /code
 # cambiar el directorio
