@@ -29,6 +29,7 @@ pipeline {
 
     stage('test') {
       steps {
+        sleep 10
         sh './scripts/test_cont.sh'
       }
     }
