@@ -1,5 +1,4 @@
 Flask
 requests
 bs4
-matplotlib
 Pillow
