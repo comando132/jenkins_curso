@@ -21,5 +21,17 @@ pipeline {
       }
     }
 
+    stage('Run container') {
+      steps {
+        sh './run_container.sh'
+      }
+    }
+
+    stage('test') {
+      steps {
+        sh './scripts/test_cont.sh'
+      }
+    }
+
   }
 }
